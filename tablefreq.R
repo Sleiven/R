@@ -15,17 +15,20 @@ tablefreq <- function(file, sel.col = 2:5, col.name = NA,
   # Argumentos:
     # file         = Archivo del tipo ".xlxs" o “.xls” que contenga la 
     #                tabla generada a partir de los datos generados por 
-    #                el datta logger HOBO U23-001 Pro v2.  
+    #                el data logger, por defecto se usó el 
+    #                datta logger HOBO U23-001 Pro v2.  
     # 
+    # sel.col      = Vector del tipo numerico. Indica la(s) posicion(es)
+    #                de las columnas del Excel de las cuales se desea 
+    #                extraer los datos. En caso de que se desee hacer un
+    #                filtro por horas, debe incluirse la posicion de la
+    #                columna que registra el tiempo.
+    #
     # col.name     = Vector del tipo caracter. Va a indicar los nombres 
     #                que tendrán las columnas del data frame final.  
     #                En caso de quedar NA el argumento, 
     #                la función brindará nombres aproximados de forma 
     #                automática.
-    #
-    # sel.col      = Vector del tipo numerico. Debe incluir la posicion 
-    #                de la columna columna que registra el tiempo ademas
-    #                de las que se quiere obtener los datos.
     #
     # h.ini        = Elemento del tipo fecha. Indica la fecha y hora 
     #                correspondiente al momento donde se desea comenzar 
