@@ -11,8 +11,7 @@ tablefreq <- function(file, sel.col = 2:5, col.name = NA,
     # (Humedad relativa, Punto de rocio y Termperatura), y de acuerdo 
     # al intervalo de tiempo otorgado por el usuario se le entregará los
     # datos máximos, mínimos y la media para cada variable ambiental
-  
-  
+    
   # Argumentos:
     # file         = Archivo del tipo ".xlxs" o “.xls” que contenga la 
     #                tabla generada a partir de los datos generados por 
@@ -46,8 +45,7 @@ tablefreq <- function(file, sel.col = 2:5, col.name = NA,
     #                de “3” elimina las filas finales que quedaron vacías 
     #                en la tabla ingresada en “file” que están predeterminadas 
     #                por el data logger.
-  
-  
+    
   # Código
     library(readxl)                                                    # Se activa el paquete necesario
     tabla <- read_excel(file, skip = skip.title)                       # Se necesita extraer tabla del Excel sin la primera fila
@@ -89,36 +87,37 @@ tablefreq <- function(file, sel.col = 2:5, col.name = NA,
     # si h.ini = NA y h.fin = NA se entrega una matriz con  el numero 
     # de columnas de excel seleccionadas y 3 filas con el mínimo, 
     # máximo y promedio de los valores hallados en las columnas.
-    
+    #
     # si h.ini = AAAA-MM-DD hh:mm y h.fin = AAAA-MM-DD hh:mm se entrega
     # una matriz con el numero de columnas selecionadas y 3 filas con 
     # el mínimo, máximo y promedio de los valores hallados en los rangos
     # seleccionados.
-    
+    #
     # si lo ingresado a h.ini y h.fin tiene un formato erroneo, se 
     # entregará el siguiente mensaje error: "h.ini y h.fin deben tener 
     # formato 'AAAA-MM-DD hh:mm'"
-    
+    #
     # si h.ini tiene un valor ingresado y h.fin no o viseversa, se 
     # entregará el siguiente mensaje para denotar el error.: 
     # "Si h.ini o h.fin es modificado, debe otorgarse otro tiempo de 
     # referencia"
-    
+    #
     # si col.name no coincide con la cantidad de columnas seleccionadas,
     # se entregará el siguiente mensaje error: "La longitud de col.name
     # debe corresponder a la cantidad de columnas con datos numéricos" 
   
   # Ejemplos de uso
     # tablefreq(file = 'sonda_202012915.xlsx')
-    
+    #
     # tablefreq(file = 'sonda_202012915.xls',
     #           h.ini = '2020-03-15 01:50', 
     #           h.fin = '2020-03-15 07:00', sel.col = 2:4)
-    
+    #
     # tablefreq(file = 'sonda_2020_2_2690.xlsx',
     #           h.ini = '2020-03-14 10:00', 
     #           h.fin = '2020-03-14 11:10', sel.col = c(2, 5), 
     #           col.name = 'Pt. roci')
+  
 }
 
 
