@@ -7,7 +7,7 @@ quartile_com <- function(datos){
     # de un conjunto de datos de caracter numerico
   
   # Argumentos:
-    # datos -> vector de clase numerica con el conjunto de datos 
+    # datos = vector de clase numerica con el conjunto de datos 
   
   # Codigo:
     mar <- summary(datos)
