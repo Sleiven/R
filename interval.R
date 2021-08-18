@@ -28,7 +28,8 @@ interval <- function(x, confidence){
     t <- 1 - alpha/2                                                  
     tv <- round(qt(p = t, df = n - 1), 3)                             # Obtains the cuantile value of the Student model  
     intervals <- c(L1 = mean(x) - tv * eem, L2 = mean(x) + tv * eem)  # Calculates and saves both limits 
-    round(intervals, 2)                                               
+    intervals <- round(intervals, 2)
+    intervals                                               
     
   # Value
     # Two numeric values labeled as L1 and L2, 
