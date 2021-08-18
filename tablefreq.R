@@ -2,7 +2,7 @@ tablefreq <- function(file, sel.col = 2:5, col.name = NA,
                       h.ini = NA, h.fin = NA, 
                       skip.title = 1, del.lastrows = 3){
   
-  # Autores: BBSW | release: Nov 2020 | Version: 5.0 
+  # Autores: BBSW | Release: Nov 2020 | Version: 5.0 
   
   # Descripción:
     # Esta función toma los datos desde un documento de Excel 
