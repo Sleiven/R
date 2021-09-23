@@ -1,5 +1,5 @@
 quartile_com <- function(datos){
-  # Autor: Murillo-Cardona David | Mar 2021 | version 1.0
+  # Autor: Murillo-C David | Mar 2021 | version 1.0
   
   # Descripcion:
     # Modificacion realizada sobre la funcion summary {stats}
