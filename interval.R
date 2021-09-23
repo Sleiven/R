@@ -1,6 +1,6 @@
 interval <- function(x, confidence){
   
-  # Murillo_Cardona David | release: Aug 2021 | version: 1.0
+  # Murillo-C David | release: Aug 2021 | version: 1.0
   
   # Description
     # This function helps to calculate the user-desired confidence interval 
@@ -8,7 +8,7 @@ interval <- function(x, confidence){
     # The estimation uses the Student probability model (or T model) which 
     # takes into account the freedom degrees.  
   
-  # Argumentos
+  # Arguments
     # x          = Numeric type vector which contains the results of the 
     #              haracters studied in the sample from which is desired to 
     #              obtain the confidence interval 
