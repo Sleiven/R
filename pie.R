@@ -1,5 +1,5 @@
 PIE <- function(ni){ 
-  # version 2.0| Oct 2020 | Autores: Ramirez Paola, David Camila, Murillo David
+  # version 2.0| Oct 2020 | Autores: Ramirez Paola, David Camila, Murillo-C David
   
   # Descripcion:
   # Se mide la diversidad de especies de acuerdo a
